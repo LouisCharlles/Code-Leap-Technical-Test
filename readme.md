@@ -106,6 +106,7 @@ Environment variables:
 DJANGO_SECRET_KEY=your-secret
 DEBUG=True
 ALLOWED_HOSTS=*
+CORS_ALLOW_ALL_ORIGINS=true
 ```
 
 ---
@@ -121,4 +122,5 @@ ALLOWED_HOSTS=*
 - [Django REST Framework](https://www.django-rest-framework.org/)
 - [DRF SimpleJWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 - [Docker](https://docs.docker.com/)
+
 
