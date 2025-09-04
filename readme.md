@@ -49,7 +49,7 @@ If JWT is used, ownership is verified by matching `request.user.username`.
 ### Local Setup
 ```bash
 # clone repo
-$ git clone <your-repo-url>
+$ git clone https://github.com/LouisCharlles/Code-Leap-Technical-Test
 $ cd codeleap_backend
 
 # create virtualenv
@@ -61,10 +61,10 @@ $ venv\Scripts\activate    # (Windows)
 $ pip install -r requirements.txt
 
 # run migrations
-$ python src/manage.py migrate
+$ python manage.py migrate
 
 # run server
-$ python src/manage.py runserver
+$ python manage.py runserver
 ```
 
 The API will be available at `http://127.0.0.1:8000/`
@@ -121,3 +121,4 @@ ALLOWED_HOSTS=*
 - [Django REST Framework](https://www.django-rest-framework.org/)
 - [DRF SimpleJWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 - [Docker](https://docs.docker.com/)
+
