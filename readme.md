@@ -96,10 +96,23 @@ Includes tests for:
 ---
 
 ## 🌐 Deployment
-This project can be deployed on:
-- **Heroku** (using Gunicorn).
-- **Railway / Render / Fly.io** (simple Docker deploy).
-- **AWS EC2/ECS** (bonus if desired).
+This project has be deployed on Render and Docker:
+
+### Posts
+- `GET https://code-leap-technical-test.onrender.com/api/posts/` → list posts (with pagination).
+- `POST https://code-leap-technical-test.onrender.com/api/posts/` → create post (`username`, `title`, `content`).
+- `PATCH https://code-leap-technical-test.onrender.com/api/posts/{id}/` → edit own post.
+- `DELETE https://code-leap-technical-test.onrender.com/api/posts/{id}/` → delete own post.
+
+### Likes
+- `POST https://code-leap-technical-test.onrender.com/api/posts/{id}/like/` → like a post.
+- `POST https://code-leap-technical-test.onrender.com/api/posts/{id}/unlike/` → unlike a post.
+
+### Comments
+- `GET https://code-leap-technical-test.onrender.com/api/posts/{id}/comments/` → list comments for a post.
+- `POST https://code-leap-technical-test.onrender.com/api/posts/{id}/comments/` → create comment (`username`, `content`).
+- `PATCH https://code-leap-technical-test.onrender.com/api/comments/{id}/` → edit own comment.
+- `DELETE https://code-leap-technical-test.onrender.com/api/comments/{id}/` → delete own comment.
 
 Environment variables:
 ```
@@ -122,5 +135,6 @@ CORS_ALLOW_ALL_ORIGINS=true
 - [Django REST Framework](https://www.django-rest-framework.org/)
 - [DRF SimpleJWT](https://django-rest-framework-simplejwt.readthedocs.io/en/latest/)
 - [Docker](https://docs.docker.com/)
+
 
 
